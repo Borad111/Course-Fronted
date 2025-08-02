@@ -10,7 +10,7 @@ import { Progress } from "@/components/ui/progress";
 
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
+// import { Switch } from "@/components/ui/switch";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
@@ -23,7 +23,7 @@ import {
 import { useNavigate, useParams } from "react-router-dom";
 
 // const MEDIA_API = "https://backendc-1-qq4i.onrender.com/api/v1/media";
-const MEDIA_API = "http://localhost:3000/api/v1/media"; // For local development
+const MEDIA_API = `${import.meta.env.VITE_BASE_URL}/api/v1/media`; // For local development
 function LectureTab() {
   const { courseId, lectureId } = useParams();
 

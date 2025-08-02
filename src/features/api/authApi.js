@@ -3,7 +3,7 @@ import { userLoggedIn, userLoggedOut } from "../authSlice";
 // import { build } from "vite";
 
 // const userApi="https://backendc-1-qq4i.onrender.com/api/v1/user/"
-const userApi="http://localhost:3000/api/v1/user/"
+const userApi=`${import.meta.env.VITE_BASE_URL}/api/v1/user/`
 
 export  const authApi=createApi({
     reducerPath:"authApi",
